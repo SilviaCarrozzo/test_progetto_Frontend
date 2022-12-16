@@ -1,0 +1,71 @@
+{
+    "idElaborazione": "001",
+    "codProcesso": "P01",
+    "codStatoElab": "EXECUTED",
+    "datReport": "2022-01-01",
+    "nomElaborazione": "TR02",
+    "codUtenteCreazione": "U0K4520",
+    "noteElaborazione": "test elaborazione",
+    "parametri": [
+        {
+            "codParametro": "001",
+            "nomParametro": "Credito Gestionale",
+            "valoreParametro": "1005"
+        },
+        {
+            "codParametro": "002",
+            "nomParametro": "Motore Immobiliare",
+            "valoreParametro": "1006"
+        }
+    ],
+    "tabelleInput": [
+        {
+            "idTabella": 1,
+            "numVersioneTabella": 1,
+            "datReport": "2022-01-01",
+            "nomTabella": "TE_BDRI0_PROIEZ_EAD",
+            "codTipoTabella": ".xlsx",
+            "nomFile": "TE_BDRI0_PROIEZ_EAD.xlsx",
+            "nomUriFile": "http://test/tab/TE_BDRI0_CAMBIO_PTF_PL_V0.xlsx",
+            "idElabGenerante": 100,
+            "flgDownload":false
+        },
+        {
+            "idTabella": 2,
+            "numVersioneTabella": 2,
+            "datReport": "2022-02-02",
+            "nomTabella": "TE_BDRI0_STD_LGD_PCTDIFF",
+            "codTipoTabella": ".xlsx",
+            "nomFile": "TE_BDRI0_STD_LGD_PCTDIFF.xlsx",
+            "nomUriFile": "http://test/tab/TE_BDRI0_STD_LGD_PCTDIFF.xlsx",
+            "idElabGenerante": 200,
+            "flgDownload":true
+        }
+    ],
+    "tabelleOutput": [
+        {
+            "idTabella": 1,
+            "numVersioneTabella": 1,
+            "datReport": "2022-01-01",
+            "nomTabella": "TE_BDRI0_PROIEZ_EAD",
+            "codTipoTabella": ".xlsx",
+            "flgDownload":false
+        },
+        {
+            "idTabella": 2,
+            "numVersioneTabella": 2,
+            "datReport": "2022-02-02",
+            "nomTabella": "TE_BDRI0_STD_LGD_PCTDIFF",
+            "codTipoTabella": ".xlsx",
+            "flgDownload":false
+        },
+        {
+            "idTabella": 3,
+            "numVersioneTabella": 3,
+            "datReport": "2022-04-02",
+            "nomTabella": "TE_BDRI0_STD_LGD_PCTDIFF",
+            "codTipoTabella": ".xlsx",
+            "flgDownload":false
+        }
+    ]
+}

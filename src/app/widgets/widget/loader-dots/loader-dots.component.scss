@@ -1,0 +1,40 @@
+.wrapper{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 50%;
+    top: 9px;
+    transform: translate(-50%, -50%);
+  }
+  .circle{
+    width:5px;
+    height:5px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #258900;
+    left:15%;
+    transform-origin: 50%;
+    animation: circle .5s alternate infinite ease;
+  }
+  
+  @keyframes circle{
+    0%{
+        top:5px;
+        height:5px;
+    }
+    40%{
+        height:5px;
+    }
+    100%{
+        top:0%;
+    }
+  }
+  .circle:nth-child(2){
+    left:41%;
+    animation-delay: .2s;
+  }
+  .circle:nth-child(3){
+    left:66%;
+    right:15%;
+    animation-delay: .3s;
+  }

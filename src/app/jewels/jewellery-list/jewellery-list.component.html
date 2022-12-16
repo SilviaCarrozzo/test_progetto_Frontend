@@ -1,0 +1,53 @@
+<p>jewellery-list works!</p>
+
+<h4 class="text text-center mt-3 ">{{'articoli' | translate}} </h4>
+<table *ngIf="completeElement.modelDetail.tabelleInput" mat-table [dataSource]="completeElement.modelDetail.tabelleInput"
+    multiTemplateDataRows class="smallTables">
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplayInput">
+        <span *ngIf="column != 'actions' && column != 'download'">
+            <th mat-header-cell [ngClass]="{'w-cell':column == 'numVersioneTabella'}" *matHeaderCellDef>
+                {{'storico.tabella.' + column | translate | uppercase}}</th>
+        </span>
+        <span *ngIf="column == 'actions'">
+            <th mat-header-cell class="w-actions" *matHeaderCellDef></th>
+        </span>
+        <span *ngIf="column == 'download'">
+            <th mat-header-cell class="w-cell" *matHeaderCellDef>
+                <mat-icon matTooltip="{{'tooltip.downloadMassivo' | translate}}" 
+                    class="mat-icon-rtl-mirror icon pt-1" color="primary"
+                   (click)="getMassiveDownload(completeElement)">archive</mat-icon>
+            </th>
+        </span>
+        <span *ngIf="column == 'numVersioneTabella'">
+            <td mat-cell class="w-cell" *matCellDef="let element">
+                <span>{{element[column]}}</span>
+            </td>
+        </span>
+        <span *ngIf="column == 'nomValueLabel'">
+            <td mat-cell class="text-align-left" *matCellDef="let element" matTooltip="{{(element.idElabGenerante || element.codTipoTabella === 'INPUT_ON_PREM')? element.nomTabella + ' - ' + element[column] : element[column]}}">
+                <span *ngIf="element.idElabGenerante || element.codTipoTabella === 'INPUT_ON_PREM'">{{element.nomTabella}} - </span><span>{{element[column]}}</span>
+            </td>
+        </span>
+        <span *ngIf="column == 'actions'">
+            <td mat-cell class="w-actions" *matCellDef="let element">
+                <mat-icon matTooltip="{{element.desEstesaTabella}}" class="mat-icon-rtl-mirror icon pt-1"
+                    color="primary">info</mat-icon>
+            </td>
+        </span>
+        <span *ngIf="column == 'download'">
+            <td mat-cell class="w-cell" *matCellDef="let element">
+                <mat-icon matTooltip="{{'tooltip.iconDownload' | translate}}"
+                    class="mat-icon-rtl-mirror icon pt-1"
+                    [ngClass]="{'disabled-button':  element.flgDownload==false}"
+                    (click)="element.flgDownload && downloadFileExcel(element, false)" color="primary">
+                    get_app
+                </mat-icon>
+                <mat-icon matTooltip="{{'tooltip.elaborazione-generante' | translate}}"
+                    *ngIf="element.idElabGenerante && !viewTree" class="mat-icon-rtl-mirror icon pt-1" color="primary"
+                    (click)="getElabGenerante(element.idElabGenerante)">wrap_text</mat-icon>               
+            </td>
+        </span>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplayInput"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplayInput;"></tr>
+</table>

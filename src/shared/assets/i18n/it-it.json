@@ -1,0 +1,9 @@
+{
+    "unauthorized": "L'utente non è autorizzato ad accedere all'applicativo",
+    "not-available": "non disponibile",
+    "error-send-on-premise": "Errore in fase di invio dati di output verso on-premise",
+    "seleziona": "Seleziona",
+    "message-warnign-title": "Attenzione",
+    "message-warnign": "Le modifiche/associazioni non correttamente salvate verranno perse. Si vuole continuare?",
+    "articoli": "Articoli"
+}

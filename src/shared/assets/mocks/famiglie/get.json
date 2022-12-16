@@ -1,0 +1,19 @@
+{
+    "famiglie": [
+        {
+            "codFamiglia": "FAM001",
+            "nomFamiglia": "Scenari Macro",
+            "desFamiglia": null
+        },
+        {
+            "codFamiglia": "FAM002",
+            "nomFamiglia": "Modelli Satellite",
+            "desFamiglia": null
+        },
+        {
+            "codFamiglia": "FAM003",
+            "nomFamiglia": "Proiezioni Credito",
+            "desFamiglia": null
+        }
+    ]
+}

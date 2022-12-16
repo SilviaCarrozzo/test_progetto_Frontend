@@ -1,0 +1,35 @@
+{
+    "messageKey": "error.validation.generic",
+    "severity": "ERROR",
+    "message": "Not valid method argument errors occurred",
+    "errorsMap": {
+        "ERROR": [
+            {
+                "messageKey": "error.validation.nomElaborazione",
+                "message": "non deve essere spazio",
+                "errorCode": null,
+                "severity": "ERROR"
+            },
+            {
+                "messageKey": "error.validation.codProcesso",
+                "message": "non deve essere spazio",
+                "errorCode": null,
+                "severity": "ERROR"
+            }
+        ],
+        "WARNING": [
+            {
+                "messageKey": "error.validation.nomElaborazione",
+                "message": "non deve essere spazio",
+                "errorCode": null,
+                "severity": "ERROR"
+            },
+            {
+                "messageKey": "error.validation.codProcesso",
+                "message": "non deve essere spazio",
+                "errorCode": null,
+                "severity": "ERROR"
+            }
+        ]
+    }
+}
