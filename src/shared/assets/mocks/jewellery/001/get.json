@@ -1,87 +1,61 @@
 {
-    "idElaborazione": "001",
-    "codProcesso": "P01",
-    "codStatoElab": "EXECUTED",
-    "datReport": "2022-01-01",
-    "nomElaborazione": "TR02",
-    "codUtenteCreazione": "U0K4520",
-    "noteElaborazione": "test elaborazione",
-    "parametri": [
+   "articoli": [
         {
-            "codParametro": "001",
-            "nomParametro": "Credito Gestionale",
-            "valoreParametro": "1005"
+            "idArticolo": "001",
+            "codArt": "anello_fidanzamento",
+            "nome_art": "Anello di fidanzamento",
+            "ext": ".png",
+            "descr": "Gioiello dal valore di 600 €, vendibile a rate ...."
         },
         {
-            "codParametro": "002",
-            "nomParametro": "Motore Immobiliare",
-            "valoreParametro": "1006"
+            "idArticolo": "002",
+            "codArt": "anello_fidanzamento1",
+            "nome_art": "Anello di fidanzamento",
+            "ext": ".png",
+            "descr": "Gioiello dal valore di 60 €, vendibile a rate ...."
         },
         {
-            "codParametro": "003",
-            "nomParametro": "Impatti PL",
-            "valoreParametro": "1007"
-        }
-    ],
-    "tabelleInput": [
-        {
-            "idTabella": 1,
-            "numVersioneTabella": 1,
-            "datReport": "2022-01-01",
-            "nomTabella": "TE_BDRI0_PROIEZ_EAD",
-            "codTipoTabella": ".xlsx",
-            "nomFile": "TE_BDRI0_PROIEZ_EAD.xlsx",
-            "nomUriFile": "http://test/tab/TE_BDRI0_CAMBIO_PTF_PL_V0.xlsx",
-            "idElabGenerante": 100,
-            "flgDownload":true
+            "idArticolo": "003",
+            "codArt": "ciondolo_occhio",
+            "nome_art": "Ciondolo a forma di occhio",
+            "ext": ".png",
+            "descr": "Gioiello dal valore di 200 €, vendibile a rate ...."
         },
         {
-            "idTabella": 2,
-            "numVersioneTabella": 2,
-            "datReport": "2022-02-02",
-            "nomTabella": "TE_BDRI0_STD_LGD_PCTDIFF",
-            "codTipoTabella": ".xlsx",
-            "nomFile": "TE_BDRI0_STD_LGD_PCTDIFF.xlsx",
-            "nomUriFile": "http://test/tab/TE_BDRI0_STD_LGD_PCTDIFF.xlsx",
-            "idElabGenerante": 200,
-            "flgDownload":false
+            "idArticolo": "004",
+            "codArt": "collana_chiave_pianeta",
+            "nome_art": "Collana con ciondolo a forma di chiave",
+            "ext": ".png",
+            "descr": "Gioiello dal valore di 400 €, vendibile a rate ...."
         },
         {
-            "idTabella": 3,
-            "numVersioneTabella": 3,
-            "datReport": "2022-03-03",
-            "nomTabella": "TE_BDRI0_PROIEZ_RTG_PD",
-            "codTipoTabella": ".xlsx",
-            "nomFile": "TE_BDRI0_PROIEZ_RTG_PD.xlsx",
-            "nomUriFile": "http://test/tab/TE_BDRI0_PROIEZ_RTG_PD.xlsx",
-            "idElabGenerante": 300,
-            "flgDownload":false
-        }
-    ],
-    "tabelleOutput": [
-        {
-            "idTabella": 1,
-            "numVersioneTabella": 1,
-            "datReport": "2022-01-01",
-            "nomTabella": "TE_BDRI0_PROIEZ_EAD",
-            "codTipoTabella": ".xlsx",
-            "flgDownload":false
+            "idArticolo": "005",
+            "codArt": "collana_cuore_azzurro",
+            "nome_art": "Collana  con ciondolo a forma di cuore",
+            "ext": ".png",
+            "descr": "Gioiello dal valore di 400 €, vendibile a rate ...."
         },
         {
-            "idTabella": 2,
-            "numVersioneTabella": 2,
-            "datReport": "2022-02-02",
-            "nomTabella": "TE_BDRI0_STD_LGD_PCTDIFF",
-            "codTipoTabella": ".xlsx",
-            "flgDownload":true
+            "idArticolo": "006",
+            "codArt": "collana_fiore_loto",
+            "nome_art": "Collana  con ciondolo a forma di fiore loto",
+            "ext": ".webp",
+            "descr": "Gioiello dal valore di 300 €, vendibile a rate ...."
         },
         {
-            "idTabella": 3,
-            "numVersioneTabella": 3,
-            "datReport": "2022-03-03",
-            "nomTabella": "TE_BDRI0_PROIEZ_RTG_PD",
-            "codTipoTabella": ".xlsx",
-            "flgDownload":false
+            "idArticolo": "007",
+            "codArt": "collana_mandala",
+            "nome_art": "Collana con ciondolo a forma di mandala",
+            "ext": ".webp",
+            "descr": "Gioiello dal valore di 350 €, vendibile a rate ...."
+        },
+        {
+            "idArticolo": "007",
+            "codArt": "collana_mandala2",
+            "nome_art": "Collana con ciondolo a forma di mandala",
+            "ext": ".webp",
+            "descr": "Gioiello dal valore di 300 €, vendibile a rate ...."
         }
     ]
+   
 }

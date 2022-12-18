@@ -18,7 +18,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { registerLocaleData } from '@angular/common';
 
@@ -48,7 +47,6 @@ registerLocaleData(localeIT);
         MatSnackBarModule,
         MatStepperModule,
         MatSlideToggleModule,
-        DragDropModule
     ],
     exports: [
         MatTabsModule,
@@ -71,8 +69,7 @@ registerLocaleData(localeIT);
         MatDialogModule,
         MatSnackBarModule,
         MatStepperModule,
-        MatSlideToggleModule,
-        DragDropModule
+        MatSlideToggleModule
     ],
     providers: []
 })

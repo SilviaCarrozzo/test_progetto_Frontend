@@ -6,8 +6,7 @@ import { LoaderInterceptorService } from './service/loader-http-interceptor.serv
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @NgModule({
-    imports: [
-       
+    imports: [   
         TranslateModule/*.forRoot({
             loader: {
               provide: TranslateLoader,
