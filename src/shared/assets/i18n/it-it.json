@@ -5,5 +5,15 @@
     "seleziona": "Seleziona",
     "message-warnign-title": "Attenzione",
     "message-warnign": "Le modifiche/associazioni non correttamente salvate verranno perse. Si vuole continuare?",
-    "articoli": "Articoli"
+    "articoli": "Articoli",
+    "store": {
+        "gioielli":{
+            "tabella":{
+                "idArticolo": "Id Articolo",
+                "img": "Img",
+                "nome_art": "Nome Articolo",
+                "descr": "Descrizione"
+            }
+        }
+    }
 }
