@@ -9,12 +9,12 @@ export const routes: Routes = [
   {
     path: 'unauthorized',
   },
-  {
+ /* {
     path: 'register',
     loadChildren: () => import('./jewels/register-client'),
     canActivate: [
     ]
-  },
+  },*/
   { path: '**', redirectTo: 'error' }
 
 ];

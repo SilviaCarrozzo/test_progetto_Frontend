@@ -2,18 +2,18 @@
 <h4 class="text text-center mt-3 ">{{'articoli' | translate}} </h4>
 <table *ngIf="dataSource" mat-table [dataSource]="dataSource"
     multiTemplateDataRows>
-    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplayInput">
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
         <span>
             <th mat-header-cell [ngClass]="{'w-cell':(column == 'idArticolo' || column == 'actions'), 'w-cell2': column== 'img'}" *matHeaderCellDef>
                 {{'store.gioielli.tabella.' + column | translate | uppercase}}</th>
         </span>
         <span *ngIf="column == 'img'">
             <td mat-cell class="w-cell2" *matCellDef="let element">
-                <img src="src/shared/assets/images{{element['codArt']+{{element['ext']}}" alt="{{element['nome_art']}}"/>
+                <img src="../../../shared/assets/images/{{element['codArt']+element['ext']}}" alt="{{element['nome_art']}}"/>
             </td>
         </span>
         <span *ngIf="column != 'img' && column != 'actions'">
-            <td mat-cell class="text-align-left" *matCellDef="let element" matTooltip="{{(element.idElabGenerante || element.codTipoTabella === 'INPUT_ON_PREM')? element.nomTabella + ' - ' + element[column] : element[column]}}">
+            <td mat-cell class="text-align-left" *matCellDef="let element" matTooltip="{{element[column]}}">
                 <span>{{element[column]}}</span>
             </td>
         </span>

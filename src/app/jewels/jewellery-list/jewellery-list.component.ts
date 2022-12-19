@@ -4,7 +4,7 @@ import { StoreService } from '../provider/store.service';
 @Component({
   selector: 'jewellery-list',
   templateUrl: './jewellery-list.component.html',
-  styleUrls: ['./jewellery-list.component.css']
+  styleUrls: ['./jewellery-list.component.scss']
 })
 export class JewelleryListComponent {
   columnsToDisplay = ['idArticolo', 'img', 'nome_art', 'descr', 'statoElab', 'actions'];
