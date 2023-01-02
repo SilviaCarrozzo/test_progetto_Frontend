@@ -1,8 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { JewelleryListComponent } from './jewels/jewellery-list/jewellery-list.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/jewels/jewellery-list', pathMatch: 'full' },
+  { path: 'vetrina', component: JewelleryListComponent }
+ // { path: 'second-component', component: SecondComponent },
+];
+
+/*routes: Routes = [
+  { path: '',
+    redirectTo: '/jewels/jewellery-list',
+    //loadChildren: () => import('.jewels/jewellery-list'),
+    pathMatch: 'full' },
   {
     path: 'oauth',
   },
@@ -14,10 +23,10 @@ export const routes: Routes = [
     loadChildren: () => import('./jewels/register-client'),
     canActivate: [
     ]
-  },*/
+  },
   { path: '**', redirectTo: 'error' }
 
-];
+];*/
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

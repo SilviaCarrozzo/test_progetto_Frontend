@@ -1,10 +1,10 @@
 import { browser, element, by } from 'protractor';
 
-describe('Tour of Heroes', () => {
+describe('Jewellery Store', () => {
   beforeEach(() => browser.get('/'));
 
-  it('should display "Tour of Heroes"', async () => {
+  it('should display "Jewellery Store"', async () => {
     const title = await element(by.css('app-root h1')).getText();
-    expect(title).toEqual('Tour of Heroes');
+    expect(title).toEqual('Jewellery Store');
   });
 });
